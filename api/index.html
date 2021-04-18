@@ -1,0 +1,53 @@
+<html>
+	<body>
+		<head>
+			<link href="css.css" rel="stylesheet" type="text/css">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		</head>
+		<?php include 'student.php';?>
+		<?php include 'class/Student.php';?>
+		<center>
+			<br>
+			<div class="blu">
+				<p>
+					<label><b>Manage Employees</b></label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					<br><br>
+					<form action="student.php">
+					<button type="submit" class="btn btn-danger" onclick="fdelete()"> <img src="meno.png" /> &nbsp; Cancella</button>&nbsp;&nbsp;
+					
+					<button type="submit" class="btn btn-success" onclick="fpost()"> <img src="piu.png" /> &nbsp; Aggiungi nuovo impiegato</button>
+					</form>
+				</p>
+			
+			</div>
+			<div>
+				<br><br><br>
+				<table border="2" frame="hsides">
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Indirizzo</th>
+						<th>Telefono</th>
+						<th>Azioni</th>
+						
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							<form action="student.php">
+								<button type="submit" onclick="fpatch()"> <img src="penna.jpg" /></button>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</center>
+		
+		
+		
+		
+	</body>
+</html>

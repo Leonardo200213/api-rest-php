@@ -35,7 +35,7 @@ class Student
 		$stmt->execute(array('name' => $input['name'], 'surname'  => $input['surname'], 'sidiCode' => $input['sidiCode'], 'taxCode' => $input['taxCode']));
 		return $stmt->rowCount();
 	}
-  public function update($id, Array $input){
+  public function update($id, array $input){
 		$sql = "UPDATE student SET name = :name, surname  = :surname, sidiCode = :sidiCode, taxCode = :taxCode WHERE id = :id;";
 		$stmt = $this->db->prepare($sql);
 		$stmt->execute(array('id' => (int) $id, 'name' => $input['name'], 'surname' => $input['surname'], 'sidiCode' => $input['sidiCode'], 'taxCode' => $input['taxCode']));

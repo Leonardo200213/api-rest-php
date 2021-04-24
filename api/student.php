@@ -20,7 +20,7 @@ switch($method) {
   case 'POST':
 	$body = file_get_contents("php://input");
 	$js_decoded = json_decode($body, true);
-		$add = $this->insert
+	$add = $this->insert(array $insert);
 	$js_encode = json_encode(array('state'=>TRUE, 'student'=>$student), true);
 	header("Content-Type: application/json");
 	echo($js_encode);

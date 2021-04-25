@@ -1,0 +1,26 @@
+
+.blu{
+	background-color:#4c6b9c;
+	width: 650px;
+	height: 50px;
+	padding-top: 7px;
+	line-height: 20px;
+}
+
+label{
+	color: white;
+}
+
+.tabella{
+	width: 650px;
+}
+
+th{
+	padding:10px;
+	padding-left: 65px;
+}
+
+td{
+	padding:10px;
+	padding-left: 65px;
+}

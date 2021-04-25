@@ -14,6 +14,20 @@ class Student
     $this->db = $this->db->returnConnection();
   }
 
+	
+	if($_GET['del']){
+		delete();
+	}
+
+	if($_GET['upd']){
+		update();
+	}
+	
+	if($_GET['ins']){
+		insert();
+	}
+	
+	
   public function find($id){
 		$sql = "SELECT * FROM student WHERE id=:id";
 		$stmt = $this->db->prepare($sql);

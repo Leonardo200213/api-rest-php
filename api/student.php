@@ -58,5 +58,9 @@ switch($method) {
     break;
 }
 
+function getID() {
+    return explode('/', getenv('REQUEST_URI'))[4];
+}
+
 
 ?>
